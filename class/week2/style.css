@@ -14,3 +14,14 @@
     min-height: 400px;
     max-height: 400px;
 }
+
+#main [class*='col-md-3'] {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+}
+.top-long {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
