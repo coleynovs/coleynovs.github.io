@@ -1,0 +1,24 @@
+img{
+  margin:auto;
+  display: block;
+  padding: 20px;
+}
+body{
+  margin: auto;
+  text-align: center;
+  max-width: 960px;
+}
+
+.size{
+  max-height: 300;
+  max-width: 400;
+}
+.social a{
+
+  display: inline-block;
+}
+
+.social{
+  text-align: center;
+
+}
