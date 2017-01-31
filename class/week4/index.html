@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <style media="screen">
+        .big-text {
+          font-size: 36px;
+        }
+
+        .little-text {
+          font-size: 28px;
+        }
+
+        .height1 {
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            font-family: Satisfy;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .height2 {
+            height: 400px;
+            min-height: 400px;
+            max-height: 400px;
+        }
+
+        .height3 {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 height1 randomColor big-text"> Colourful </div>
+            <div class="col-md-6 height1 randomColor"></div>
+            <div class="col-md-1 height1 randomColor little-text"> Red </div>
+            <div class="col-md-1 height1 randomColor little-text"> Green </div>
+            <div class="col-md-1 height1 randomColor little-text"> Blue </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 height2 randomColor">
+                <img src="images/middle-chicken.jpg" alt="cock a doodle doo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 height3 randomColor">
+                <img src="images/family.jpg" alt="bok obk bok" />
+            </div>
+            <div class="col-md-6 height3 randomColor">
+                <img src="images/blackbeauty.jpg" alt="neigh" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," +
+                    getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," +
+                getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script> -->
+</body>
+
+</html>
