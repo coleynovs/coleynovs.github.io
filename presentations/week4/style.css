@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+body {
+  text-align: center;
+  background-color: #fffab0;
+  font-family: sans-serif;
+ }
+h1, h2, h3, h4{
+  font-family: 'Pangolin', cursive;
+}
+h1{
+  color: #66baff;
+  font-size: 50px;
+}
+h2{
+  color: #ff0000 ;
+}
+h3{
+  color: #005c88;
+}
+h4{
+  color: #c42400;
+}
+#page-wrap {
+  text-align: left;
+  width: 960px;
+  margin: 0 auto;
+}
+
+ul{
+  display: inline-block;
+  text-align: left;
+}
+
+img{
+  width: 75%;
+}
