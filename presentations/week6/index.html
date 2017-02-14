@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presentation Week 6</title>
+    <style media="screen">
+    .header{
+      height: 350px;
+      max-height: 350px;
+      min-height: 350px;
+      line-height: 350px;
+      text-align: center;
+    }
+    .row2{
+      height: 75px;
+      max-height: 75px;
+      min-height: 75px;
+    }
+    .row3{
+      height: 50px;
+      max-height: 50px;
+      min-height: 50px;
+      text-align: center;
+    }
+    .row4{
+      height: 75px;
+      max-height: 75px;
+      min-height: 75px;
+    }
+    .row5{
+      height: 75px;
+      max-height: 75px;
+      min-height: 75px;
+    }
+    .image{
+      max-height: 100%;
+      max-width: 100%;
+
+    }
+    .row6{
+      height: 300px;
+      max-height: 300px;
+      min-height: 300px;
+    }
+    .title{
+      text-align: center;
+      font-size: 24px;
+    }
+
+
+    </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 randomColor header">
+          <img class="image" src="images/car.jpg" alt="car"/></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 randomColor row2 title"> Larry The Leaser</div>
+        <div class="col-md-6 randomColor row2"> Part of header image</div>
+        <div class="col-md-2 randomColor row2"> Sign In</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 randomColor row3">Nav Bar: Cars</div>
+        <div class="col-md-3 randomColor row3">Nav Bar: Promotions</div>
+        <div class="col-md-3 randomColor row3">Nav Bar: Lease A Car</div>
+        <div class="col-md-3 randomColor row3">Nav Bar: Contact Us</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 randomColor row4">Search Bar: Date Leaving</div>
+        <div class="col-md-4 randomColor row4">Date Returning</div>
+        <div class="col-md-3 randomColor row4">Number of Passesngers</div>
+        <div class="col-md-1 randomColor row4"> Search</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 randomColor row5"></div>
+        <div class="col-md-4 randomColor row5 title">Page title</div>
+        <div class="col-md-4 randomColor row5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 randomColor row6">
+          <img class="image" src="images/dope.jpg" alt="Chicken Ridin Dirty"/>
+        </div>
+        <div class="col-md-7 randomColor row6"> VRRRRRRRROOOOOOOOOOOMMMMMMM!!!!
+          SKKKKRRRRRRRTTTTTT!!!!!</div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 randomColor row6">
+          <img class="image" src="images/dope2.jpg" alt="Chicken Ridin Dirty"/>
+        </div>
+        <div class="col-md-7 randomColor row6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 randomColor row6">
+          <img class="image" src="images/dop3.jpg" alt="Chicken Ridin Dirty"/> Me
+        </div>
+        <div class="col-md-7 randomColor row6">I think this wireframe works effectively
+        for this type of business for several reasons. First, the user has the option
+        to lease a car twice befor they even hit the images and content in the body.
+        Once in the navigation bar and once clearly laid out before the body content starts.
+        The search bar will lead to an easy leasing process to make it easier for
+        users to spend money. Second the home page content is cars that are available for leasing
+        so the user doesn't need to search through the website just to find the cars available.
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 randomColor row5">Footer</div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 55 + 200);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+            $("body").fadeIn();
+
+
+        })
+    </script>
+  </body>
+</html>
