@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 9</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .drinkWithUs {
+            max-height: 250px;
+            min-height: 250px;
+            height: 250px;
+        }
+
+        .betterBeer {
+            max-height: 50px;
+            min-height: 50px;
+            height: 50px;
+        }
+        .photos {
+            max-height: 200px;
+            min-height: 200px;
+            height: 200px;
+        }
+        .footer{
+          max-height: 75px;
+          min-height: 75px;
+          height: 75px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          padding-bottom: 5px;
+          padding-top: 5px;
+        }
+        h1, p{
+          text-align: center;
+        }
+        
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 drinkWithUs randomColor">
+                <h1> Graze with us: </h1>
+                <p>(responsibly, of course) </p>
+            </div>
+            <div class="col-md-2 drinkWithUs randomColor">Facebook</div>
+            <div class="col-md-2 drinkWithUs randomColor">Twitter</div>
+            <div class="col-md-2 drinkWithUs randomColor">Instagram</div>
+            <div class="col-md-1 drinkWithUs randomColor"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 betterBeer randomColor"> #BetterBeerBrigade </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 photos randomColor">
+              <img src="images/chicken8.jpeg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+              <img src="images/chicken9.jpeg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken10.jpg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken11.jpeg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken12.jpeg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken13.jpeg" alt="A photo of a chicken" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken14.jpg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken15.jpg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken16.png" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken17.jpg" alt="A photo of a chicken" />
+            </div>
+
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken18.jpeg" alt="A photo of a chicken" />
+            </div>
+            <div class="col-md-2 photos randomColor">
+                <img src="images/chicken19.jpg" alt="A photo of a chicken" />
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 footer randomColor"> Partners </div>
+          <div class="col-md-1 footer randomColor"> About </div>
+          <div class="col-md-1 footer randomColor"> Events </div>
+          <div class="col-md-1 footer randomColor"> Beer Buzz </div>
+          <div class="col-md-1 footer randomColor"> Contact </div>
+          <div class="col-md-4 footer randomColor"></div>
+          <div class="col-md-1 footer randomColor"> Facebook  </div>
+          <div class="col-md-1 footer randomColor"> Twitter </div>
+          <div class="col-md-1 footer randomColor"> Instagram </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer randomColor"> © 2017 BountyBev, All Rights Reserved </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 55 + 200);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+            $("body").fadeIn();
+
+
+        })
+    </script>
+</body>
+
+</html>
