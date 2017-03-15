@@ -10,11 +10,13 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <style media="screen">
+
         .drinkWithUs {
-            max-height: 250px;
-            min-height: 250px;
-            height: 250px;
+            max-height: 200px;
+            min-height: 200px;
+            height: 200px;
         }
 
         .betterBeer {
@@ -41,9 +43,61 @@
         }
         h1, p{
           text-align: center;
+          font-family: 'Gloria Hallelujah', cursive;
         }
-        
-    </style>
+        h1{
+          padding-top: 15%;
+          font-size: 40px;
+        }
+        p{
+          font-size: 15px;
+        }
+        .social{
+          max-width: 100px;
+          max-height: 100px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-top: 40px;
+        }
+        .social1{
+          max-height: 88px;
+          max-width: 86px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-top: 49px;
+        }
+        .socialfooter img{
+          max-width: 50px;
+          max-height: 50px;
+          margin-bottom: 10px;
+          padding-top: -5px;
+
+        }
+        .betterBeer{
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 29px;
+            background-color: #b20000;
+            color: white;
+            text-align: center;
+
+        }
+        .footer, .footer1 {
+          font-family: 'Gloria Hallelujah', cursive;
+          font-size: 15px;
+          background-color: #b20000;
+          color: white;
+          text-align: center;
+
+        }
+        .footer{
+          padding-top: 20px;
+        }
+        .footer1{
+          padding-bottom: 10px;
+        }
+
+
+      </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,13 +110,29 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5 drinkWithUs randomColor">
+            <div class="col-md-1 drinkWithUs randomColor"></div>
+            <div class="col-md-4 drinkWithUs randomColor">
                 <h1> Graze with us: </h1>
                 <p>(responsibly, of course) </p>
             </div>
-            <div class="col-md-2 drinkWithUs randomColor">Facebook</div>
-            <div class="col-md-2 drinkWithUs randomColor">Twitter</div>
-            <div class="col-md-2 drinkWithUs randomColor">Instagram</div>
+            <div class="col-md-2 drinkWithUs randomColor">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img src="images/facebook.png" alt="Click here to visit our facebook!"
+                class="social">
+              </a>
+            </div>
+            <div class="col-md-2 drinkWithUs randomColor">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Click here to visit our instagram!"
+              class="social1">
+            </a>
+            </div>
+            <div class="col-md-2 drinkWithUs randomColor">
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Click here to visit our twitter!"
+              class="social">
+            </a>
+            </div>
             <div class="col-md-1 drinkWithUs randomColor"></div>
         </div>
         <div class="row">
@@ -122,15 +192,30 @@
           <div class="col-md-1 footer randomColor"> Partners </div>
           <div class="col-md-1 footer randomColor"> About </div>
           <div class="col-md-1 footer randomColor"> Events </div>
-          <div class="col-md-1 footer randomColor"> Beer Buzz </div>
+          <div class="col-md-2 footer randomColor"> Beer Buzz </div>
           <div class="col-md-1 footer randomColor"> Contact </div>
-          <div class="col-md-4 footer randomColor"></div>
-          <div class="col-md-1 footer randomColor"> Facebook  </div>
-          <div class="col-md-1 footer randomColor"> Twitter </div>
-          <div class="col-md-1 footer randomColor"> Instagram </div>
+          <div class="col-md-3 footer randomColor"></div>
+          <div class="col-md-1 footer randomColor">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/facebook1.png" alt="Click here to visit our facebook!"
+            class="socialfooter">
+          </a>
+          </div>
+          <div class="col-md-1 footer randomColor">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/instagram1.png" alt="Click here to visit our instagram!"
+            class="socialfooter">
+          </a>
+          </div>
+          <div class="col-md-1 footer randomColor">
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="images/twitter1.png" alt="Click here to visit our twitter!"
+            class="socialfooter">
+            </a>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-12 footer randomColor"> © 2017 BountyBev, All Rights Reserved </div>
+          <div class="col-md-12 footer1 randomColor"> © 2017 BountyBev, All Rights Reserved </div>
         </div>
     </div>
 
@@ -139,7 +224,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
-        function getRandomNumber() {
+      /*  function getRandomNumber() {
             return Math.floor(Math.random() * 55 + 200);
         }
 
@@ -157,7 +242,7 @@
             $("body").fadeIn();
 
 
-        })
+        }) */
     </script>
 </body>
 
