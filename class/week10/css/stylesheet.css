@@ -7,29 +7,29 @@
 
 /* As hex codes */
 
-.color-primary-0 { color: #C19253 }	/* Main Primary color */
-.color-primary-1 { color: #FFE3BE }
-.color-primary-2 { color: #EBC28B }
-.color-primary-3 { color: #986828 }
-.color-primary-4 { color: #6B420A }
+.color-primary-0 { background-color: #C19253 }	/* Main Primary color */
+.color-primary-1 { background-color:color: #FFE3BE }
+.color-primary-2 { background-color:color: #EBC28B }
+.color-primary-3 { background-color:color: #986828 }
+.color-primary-4 { background-color:color: #6B420A }
 
-.color-secondary-1-0 { color: #38657A }	/* Main Secondary color (1) */
-.color-secondary-1-1 { color: #8BA9B7 }
-.color-secondary-1-2 { color: #5B8295 }
-.color-secondary-1-3 { color: #1D4A60 }
-.color-secondary-1-4 { color: #093144 }
+.color-secondary-1-0 { background-color: #38657A }	/* Main Secondary color (1) */
+.color-secondary-1-1 { background-color: #8BA9B7 }
+.color-secondary-1-2 { background-color: #5B8295 }
+.color-secondary-1-3 { background-color: #1D4A60 }
+.color-secondary-1-4 { background-color: #093144 }
 
-.color-secondary-2-0 { color: #C18E53 }	/* Main Secondary color (2) */
-.color-secondary-2-1 { color: #FFE1BE }
-.color-secondary-2-2 { color: #EBBE8B }
-.color-secondary-2-3 { color: #986428 }
-.color-secondary-2-4 { color: #6B3E0A }
+.color-secondary-2-0 { background-color: #C18E53 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { background-color: #FFE1BE }
+.color-secondary-2-2 { background-color: #EBBE8B }
+.color-secondary-2-3 { background-color: #986428 }
+.color-secondary-2-4 { background-color: #6B3E0A }
 
-.color-complement-0 { color: #3A607C }	/* Main Complement color */
-.color-complement-1 { color: #8DA6B9 }
-.color-complement-2 { color: #5D7E97 }
-.color-complement-3 { color: #1F4562 }
-.color-complement-4 { color: #0A2C45 }
+.color-complement-0 { background-color: #3A607C }	/* Main Complement color */
+.color-complement-1 { background-color: #8DA6B9 }
+.color-complement-2 { background-color: #5D7E97 }
+.color-complement-3 { background-color: #1F4562 }
+.color-complement-4 { background-color: #0A2C45 }
 
 
 
