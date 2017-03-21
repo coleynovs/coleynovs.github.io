@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 10</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style screen="media">
+    .header{
+      max-height: 100px;
+      min-height: 100px;
+      height: 100px;
+    }
+
+    #posts, .ad{
+      min-height: 100px;
+    }
+
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 header randomColor">
+          <ul class="nav nav-tabs nav-justified">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 header randomColor ads"></div>
+        <div class="col-md-8 header" id="posts"></div>
+        <div class="col-md-2 header randomColor ads"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 header randomColor"></div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script>
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 55 + 200);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+            $("body").fadeIn();
+
+
+        })
+    </script> -->
+    <script type="text/javascript">
+
+      var myArray = [334, 745634, 657, 766]
+      var myObjects =[{},{},{}]
+      //create data for each post
+      var postsData =[
+        {
+          image:"images/person1.jpeg",
+          subheading: "It's a beautiful day for a walk!",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget rhoncus turpis. Vivamus at elementum tellus. Duis purus augue, rhoncus at eros sed, semper vehicula magna. Vestibulum ut dapibus."
+        },
+        {
+          image:"images/person2.jpeg",
+          subheading: "It's a beautiful day for a doughnut!",
+          content:  "non luctus nisl. Etiam tempor tortor vel odio elementum, vulputate sodales mauris feugiat. In nec ultrices nisi. Mauris tempus nulla in ipsum luctus ultricies. Ut ut est a nisi eleifend auctor."
+        },
+        {
+          image:"images/person3.jpeg",
+          subheading: "It's a beautiful day to adopt a pet..or a child! Surprise!",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget rhoncus turpis. Vivamus at elementum tellus. Duis purus augue, rhoncus at eros sed, semper vehicula magna. Vestibulum ut dapibus."
+        },
+        {
+          image:"images/person4.jpeg",
+          subheading: "It's a beautiful day, it reminds me of a happier time... :(",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget rhoncus turpis. Vivamus at elementum tellus. Duis purus augue, rhoncus at eros sed, semper vehicula magna. Vestibulum ut dapibus."
+        },
+        {
+          image:"images/person5.jpeg",
+          subheading: "It's a beautiful day, don't let it get away!",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget rhoncus turpis. Vivamus at elementum tellus. Duis purus augue, rhoncus at eros sed, semper vehicula magna. Vestibulum ut dapibus."
+        },
+        {
+          image:"images/person6.jpeg",
+          subheading: "It's a beautiful day, go out and enjoy it! You deserve it!",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget rhoncus turpis. Vivamus at elementum tellus. Duis purus augue, rhoncus at eros sed, semper vehicula magna. Vestibulum ut dapibus."
+        }
+      ];
+
+      var myHTML = "";
+
+      for(var i=0; i < postsData.length; i=i+1){
+
+      myHTML= myHTML +   '<div class="media">'+
+            '<div class="media-left">'+
+              '<a href="#">'+
+                '<img class="media-object" src="'+ postsData[i].image + '" alt="...">'+
+              '</a>'+
+            '</div>'+
+            '<div class="media-body">'+
+              '<h4 class="media-heading">'+ postsData[i].subheading + '</h4>'+
+               postsData[i].content +
+            '</div>'+
+          '</div>';
+
+      }
+      $(document).ready(function () {
+        $("#posts").html(myHTML);
+
+    })
+
+
+
+    </script>
+
+  </body>
+</html>
