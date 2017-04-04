@@ -1,0 +1,80 @@
+[{
+        "brand": "Samsung",
+        "model": "Galaxy S7",
+        "price": "$100.00",
+        "seller": "Koodoo",
+        "colour": "Black"
+    },
+    {
+        "brand": "Apple",
+        "model": "iPhone SE",
+        "price": "$0.00",
+        "seller": "Koodoo",
+        "colour": "Rose Gold"
+
+    },
+    {
+        "brand": "Google",
+        "model": "Pixel",
+        "price": "$400.00",
+        "seller": "Koodoo",
+        "colour": "Black"
+    },
+    {
+      "brand": "Acer",
+      "model": "Acer Liquid Zest 5",
+      "price": "$99.00",
+      "seller": "Walmart.ca",
+      "colour": "Black"
+    },
+
+    {
+      "brand": "Apple",
+      "model": "iPhone 5",
+      "price": "$229.99",
+      "seller": "FactoryDirect.ca",
+      "colour": "White"
+    },
+
+    {
+      "brand": "Google",
+      "model": "Pixel",
+      "price": "$899.00",
+      "seller": "Google",
+      "colour": "Very Silver"
+    },
+
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S6",
+      "price": "$249.99",
+      "seller": "eBay",
+      "colour": "Gold"
+    },
+
+    {
+      "brand": "Google",
+      "model": "Pixel",
+      "price": "$400.00",
+      "seller": "Koodoo",
+      "colour": "Black",
+      "image":""
+    },
+    {
+      "brand": "Android",
+      "model": "Polaroid 6",
+      "price": "$199.98",
+      "seller": "Walmart.ca",
+      "colour": "Black"
+    },
+
+    {
+      "brand": "Vertu",
+      "model": "Signature",
+      "price": "$36,520.00",
+      "seller": "Selfridges",
+      "colour": "18 ct Red Gold and Stainless Steel Black"
+    }
+
+
+  ]
